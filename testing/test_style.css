@@ -1,0 +1,302 @@
+/*
+The spidey image is attached to the body element and stays fixed thanks to the background attachment (if we want it to scrool put
+scroll)
+Very possible for the Icon on the side option for the website
+The margin is 0 for the body
+NOTE : 
+We can also give the body element border box so that every element will have border box
+OR
+the before and after border box command (see google) 
+*/
+body{
+    background-color:darkgrey;
+    background-image : url(../images/spidey-icon.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+}
+/*
+On sélectionne tout les éléments avec la classe red-paragraph
+text-align affects the text inside the p element. It affects inline elements not bloc. 
+*/
+.red-paragraph{
+    color:red;
+    text-align:center;
+    text-decoration: underline black ;
+    font-family : Arial;
+    font-style:italic;
+}
+
+/*
+On sélectionne les éléments <p> avec la classe blue paragraph. 
+*/
+p.blue-paragraph{
+    color:blue;
+    opacity: 0.6;
+    text-transform:uppercase;
+}
+
+/*
+On utilise display block pour rendre l'AFFICHAGE (seulement) en bloc
+et lui donner des margins (qui est un élément inline et pas bloc)
+*/
+img{
+
+    margin : 0 auto;
+    display:block;
+    max-width:500px;
+}
+#background-image-test{
+    margin:100px;
+    background-image: url(../images/website-icon.png);
+    background-size : cover;
+    height:200px;
+}
+
+/*Nous allons donner du style à notre liste*/
+ul{
+    padding:10px;
+    background-color:red;
+}
+li{
+    padding:10px;
+    background-color:aqua;
+}
+
+/*Here we use the pseudo class hover. It selects elements (like a) based on a
+specific condition like hover here*/
+a.linkbutton:link, a.linkbutton:visited{
+    background-color:red;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:10px;
+}
+a.linkbutton:hover{
+    color:blue;
+}
+
+/*Exemple de table et des propriétés*/
+table, th, td {
+    border:1px solid;
+}
+table{
+    width:50%;
+    margin : 0 auto;
+}
+th{
+    text-align:center;
+    background-color:green;
+    color:white;
+}
+td{
+    text-align:left;
+    padding:10px;
+}
+tr:hover{
+    background-color:greenyellow;
+}
+
+/*DIVS NEXT TO EACH OTHER (inline-bloc ; flexbox ; grid ; float)*/
+/*First we use the inline-bloc option*/
+/*we use text-align to center the inline child elements in the div*/
+div.div-next-to-each-other{
+    border : 2px solid black;
+    margin : 0 auto;
+    width:600px;
+    box-sizing : border-box;
+    padding : 25px;
+    text-align:center;
+}
+.inline-bloc{
+    border : 1px solid red;
+    padding : 5px;
+    display : inline-block;
+}
+/*Now we use the FLOAT method*/
+
+
+
+
+/*
+une valeur pour margin et padding signifie que tout les cotés ont cette valeur
+Les margins de cette élement et de celui d'en bas sont fusionnés. C'est le plus grand 
+margin qui l'emporte et qui est pris en compte. 
+*/
+#height-width-test{
+    height:200px;
+    width:300px;
+    border:10px solid red;
+    border-radius : 10px;
+    margin:20px;
+    padding : 25px;
+    background-color: aqua;
+
+}
+/*
+The box sizing proprety will make sure that the content and the padding makes 
+the size of the width. The width in the proprety is the content+padding+border. 
+*/
+#box-sizing-test{
+    height:200px;
+    width:300px;
+    border:10px solid red;
+    border-radius : 10px;
+    margin:20px;
+    padding : 25px;
+    box-sizing : border-box;
+    background-color: aqua;
+
+}
+/*
+This means that the width of the content area is 50% of the width of the body element
+*/
+#width-percent-test{
+    height:200px;
+    width:60%;
+    border:10px solid red;
+    border-radius : 10px;
+    margin:10px;
+    padding : 25px;
+    background-color: aqua;
+
+}
+
+/*
+The max-width proprety will reshapes accordingly when the window is smaller than the max-width
+worth noting for the website
+*/
+#max-width-test{
+    height:200px;
+    max-width:500px;
+    border:10px solid red;
+    border-radius : 10px;
+    margin:10px;
+    padding : 25px;
+    background-color: aqua;
+
+}
+#normal-width-test{
+    height:200px;
+    width:500px;
+    border:10px solid red;
+    border-radius : 10px;
+    margin:10px;
+    padding : 25px;
+    background-color: aqua;
+
+}
+
+/*
+auto will center the element within it's container
+*/
+#margin-auto-test{
+    height:200px;
+    width:300px;
+    border:10px solid red;
+    border-radius : 10px;
+    margin:10px auto;
+    padding : 25px;
+    background-color: aqua;
+
+}
+
+/*The parent of the child element*/
+.parent {
+    width: 800px; /* The parent has a fixed width */
+    padding: 20px;
+    border: 5px solid black;
+    background-color: lightgrey;
+    margin : 10px;
+}
+
+/*The child will be inside the the content area of the parent*/  
+.child {
+    width: 50%; /* Child will take 50% of the parent's content area */
+    background-color: red;
+}
+.child-padding{
+
+    width:50%;
+    background-color:red;
+    padding:20px;
+}
+
+/* The outline is outside the border and on top of the margin*/
+#test-outline{
+    width:200px;
+    height:200px;
+    border:10px solid black;
+    border-radius : 10px;
+    margin:10px auto;
+    padding : 10px;
+    outline: 5px solid red;
+}
+
+/*The static example position*/
+.static{
+    position:static;
+    border:3px solid green;
+    width:150px;
+}
+.relative{
+    border : 3px solid green;
+    width:150px;
+    position : relative;
+    left:300px;
+}
+/*top 30 means it will be 30px from the top and right 0 means
+ it will be 0 from the right side. We can also use percentages ! 
+ So that */
+.fixed{
+    border : 3px solid green;
+    background-color:blue;
+    color:white;
+    width:150px;
+    position : fixed;
+    top : 50%;
+    left : 50%;
+}
+/*with top the element sticks to the top of the page when you reach it's scroll position*/
+.sticky{
+    width:150px;
+    border:3px solid green;
+    padding:10px;
+    background-color: aqua;
+    color:red;
+    position:sticky;
+    top:0;
+}
+/*The position absolute. */
+.parent-absolute{
+    border: 1px solid grey;
+    width:300px;
+    height: 30px;
+    border-radius : 10px;
+    position:relative;
+    margin : 10px;
+}
+/*The height is relative to the parent*/
+.child-absolute{
+    height: 30px;
+    width:50px;
+    background-color:aqua;
+    border-radius : 10px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+/*Button elements*/
+#first-button{
+    background-color : red;
+    color:white;
+    padding : 0 10px;
+    margin : 10px 10px;
+    border-radius : 10px;
+    height : 25px;
+    line-height  : 1;
+}
+

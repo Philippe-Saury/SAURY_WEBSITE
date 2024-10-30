@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTING PAGE</title>
+    <link rel="stylesheet" href="test_style.css">
+</head>
+<body>
+    <!--Exemple d'élements avec les classes-->
+    <h1>This is a h1 paragraph</h1>
+    <h2>This is a h2 paragraph</h2>
+    <p class = "blue-paragraph">Ce paragraphe fait partie de la class blue-paragraph</p>
+    <p class ="red-paragraph">Ce paragraphe fait partie de la classe red-paragraph en Arial</p>
+    <p>Mon chat est <strong>très</strong> mignon</p>
+    <p class="blue-paragraph">Ce paragraphe fait aussi partie de la classe blue-paragraph</p>
+    <img src="../images/Deima/Deima1.jpg" width="500" alt="Mon image de test" />
+    <!--Exemple de liste-->
+    <p>Mon chat deima est à la fois : </p>
+    <ul>
+        <li>Mignon</li>
+        <li>Mignon</li>
+        <li>Mignon</li>
+    </ul>
+    <!--Exemple de référence à une autre page-->
+    <p>Voici le lien wikipédia pour apprendre plus sur les chats sibérien : </p>
+    <a href="https://fr.wikipedia.org/wiki/Sib%C3%A9rien" id="siberian">Sibérien wikipédia</a>
+
+    <!--Nous pouvons aussi transformer notre lien en "bouton" avec les padding-->
+    <p>Le texte suivant est un élément a avec des propriétés css pour lui donner le look d'un bouton</p>
+    <a href="https://www.w3schools.com/css/css_link.asp" class="linkbutton">LIEN W3SCHOOL</a>
+    <!--Test d'opacité d'un texte-->
+    <p class="blue-paragraph">Ce paragraphe à une opacité de 0.5 appliqué dessus</p>
+
+    <!--Table exemple (tr sont les lignes et th les colonnes)-->
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+        </tr>
+    </table>
+
+    <!--The stickey element. It behaves like a normal element until 
+    it hits a specified position and follows like a fixed element. -->
+    <div class="sticky">div element position : sticky and width 150</div>
+
+    <!--Having div's next to each other with the inline-bloc option-->
+    <p>THIS IS THE INLINE BLOX OPTION TO HAVE DIV NEXT TO EACH OTHER :</p>
+    <div class="div-next-to-each-other">
+        <div class="inline-bloc">Child 1</div>
+        <div class="inline-bloc">Child 2</div>
+        <div class="inline-bloc">Child 3</div>
+    </div>
+
+    <!--Having div's next to each other with the FLOAT option-->
+    <p>THIS IS THE FLOAT OPTION TO HAVE DIV NEXT TO EACH OTHER :</p>
+    <div class="div-next-to-each-other">
+        <div class="inline-bloc">Child 4</div>
+        <div class="inline-bloc">Child 5</div>
+        <div class="inline-bloc">Child 6</div>
+    </div>
+    
+
+
+    <!--Test de background image dans un élément-->
+    <div id="background-image-test">EXEMPLE DE BACKGROUND IMAGE DANS UN BOX (height=200px et margin=100px)</div>
+
+    <!--Test de Height et width et leurs propriétés-->
+    <div id="height-width-test">TEST HEIGHT WIDTH. Heigth=200px et un Width=300px (sans parent)
+        Margin = 10px ; Border = 10px Red and Padding = 25px. To rememeber, while the width 
+        of the content area is 300px, the padding adds 25 pixels to the element. 
+    </div>
+
+    <!--Test de Height et width avec box sizing-->
+    <div id="box-sizing-test">BOX SIZING CORRECTION. Heigth=200px et un Width=300px (sans parent)
+        Margin = 10px ; Border = 10px Red and Padding = 25px et box-sizing : border-box
+    </div>
+
+    <!--Test de la propriété auto dans margin-->
+    <div id="margin-auto-test">TEST MARGIN AUTO. Heigth=200px et un Width=300px (sans parent)
+        Margin = 0 auto ; Border = 10px Red and Padding = 25px.
+    </div>
+
+    <!--Test de Height et Width avec poucentage %%%-->
+    <!--Pour un pourcentage width, il est basé sur le width du contenu du conteneur parent-->
+    <!--Tout d'abord on voit un élément sans parent qui prend 50% de la largeur de la fenetre-->
+    <div id="width-percent-test">TEST WIDTH PERCENT. Height=200px et un Width=60% (sans parent)</div>
+
+    <div id="normal-width-test">Normal width</div>
+    <!--Test de max width et l'impact lorsque la fenetre rétrécit-->
+    <div id="max-width-test">TEST MAX WIDTH. Height=200px et un Max Width=500pixels (sans parent)</div>
+
+    <div class="parent">
+        <div class="child">This is a child element. It takes 50% of the content bloc width 
+            of the parent. 
+        </div>
+      </div>
+
+    <div class="parent">
+        <div class="child-padding">This is a child element. It takes 50% of the content bloc width 
+            of the parent. And the child element has padding. 
+        </div>
+    </div>
+
+    <div id="test-outline">This is a div for a outline test. The outline is outside the 
+        border and ontop of the margin. Meaning a big enough outline will go beyond
+    the margin. </div>
+
+    <!--They are four type of positions : relative, absolute, fixed and sticky-->
+    <!--There is also static which is the default position of an element-->
+    <div class="static">This div element has position : static and width 150</div>
+    <!--The relative position-->
+    <div class="relative">div element position : relative and width 150. 
+         left 300px</div>
+    <!--The fixed position. Th element is removed from the document flow
+    and is positioned relative to the browser window-->
+    <div class="fixed">div element position : fixed and width 150</div>
+    <!--Position absolute. This element is positioned to the nearest positioned
+    ancestor (the nearest parent )-->
+    <div class="parent-absolute">Search
+        <div class="child-absolute">Google
+
+        </div>
+    </div>
+
+    <!--We are using the Z INDEX-->
+
+    <!--Button element-->
+    <button id="first-button">Add to favourites</button>
+
+    <script src ="test_script"></script>
+
+</body>
+</html> 
