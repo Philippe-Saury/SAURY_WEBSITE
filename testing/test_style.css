@@ -300,3 +300,17 @@ auto will center the element within it's container
     line-height  : 1;
 }
 
+/*REMERBER THE DISPLAY BLOCK AND WHY IT NEEDED IT TO CENTER THE ELEMENT
+ASK CHATGPT ABOUT TI*/
+
+#index_link{
+    background-color :  red;
+    color : white;
+    margin : 25px auto;
+    padding : 10px;
+    text-decoration:none;
+    text-align : center;
+    display :block;
+    width:200px;
+}
+
